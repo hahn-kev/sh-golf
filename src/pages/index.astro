@@ -87,13 +87,20 @@ import Footer from "../components/Footer.astro";
         </section>
 
         <!-- Map/Info Section -->
-        <section class="py-20 bg-black text-white flex flex-col md:flex-row">
-            <div
-                class="w-full md:w-1/2 h-[500px] bg-neutral-200 flex items-center justify-center text-neutral-500 italic"
-            >
-                [Google Map Placeholder: Hunter Ranch, Paso Robles, CA]
+        <section
+            class="bg-black text-white flex flex-col md:flex-row min-h-[500px] items-stretch"
+        >
+            <div class="w-full md:w-1/2 h-[400px] md:h-auto">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10904.90459888585!2d-120.62963793716749!3d35.65119717900039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ecc5fd71e54789%3A0x16a7f627313fd5d0!2sHunter%20Ranch%20Golf%20Course%20and%20Restaurant!5e0!3m2!1sen!2sus!4v1776652411888!5m2!1sen!2sus"
+                    class="w-full h-full border-0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="w-full md:w-1/2 p-12 md:p-24 flex items-center">
+            <div
+                class="w-full md:w-1/2 p-12 md:p-24 flex items-center justify-center"
+            >
                 <div class="space-y-8">
                     <h3 class="text-3xl font-bold uppercase tracking-wider">
                         Available Daily
