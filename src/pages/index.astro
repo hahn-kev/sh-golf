@@ -1,17 +1,185 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Steve Hahn PGA Coaching at Hunter Ranch">
+    <Header />
+
+    <main>
+        <!-- Hero Section -->
+        <section
+            class="relative h-[80vh] flex items-center justify-center text-white overflow-hidden"
+        >
+            <div class="absolute inset-0 z-0">
+                <img
+                    src="/assets/hero-home.webp"
+                    alt="Steve Hahn Golf Coaching"
+                    class="w-full h-full object-cover"
+                />
+                <div class="absolute inset-0 bg-black/20"></div>
+            </div>
+
+            <div
+                class="relative z-10 max-w-4xl mx-auto px-4 text-center flex flex-col items-center"
+            >
+                <img
+                    src="/assets/pga-logo.webp"
+                    alt="PGA Logo"
+                    class="w-32 md:w-48 mb-8"
+                />
+                <h1 class="text-4xl md:text-6xl font-bold mb-8 leading-tight">
+                    Experienced Coaching<br />Personalized to your Goals
+                </h1>
+                <div class="mb-8">
+                    <a
+                        href="/contact"
+                        class="bg-white text-black px-10 py-4 uppercase tracking-widest text-sm font-bold hover:bg-neutral-200 transition-colors"
+                    >
+                        Book Lessons
+                    </a>
+                </div>
+                <p class="text-lg md:text-xl uppercase tracking-widest">
+                    All lessons at Hunter Ranch, Paso Robles CA
+                </p>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="py-20 px-4 md:px-8 bg-white">
+            <div
+                class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left"
+            >
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold uppercase tracking-wide">
+                        Adult - $100 / hour
+                    </h3>
+                    <ul class="space-y-2 text-neutral-600">
+                        <li>Any experience level</li>
+                        <li>Full swing or short game</li>
+                        <li>Strategy sessions</li>
+                        <li>Fitness recommendations</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold uppercase tracking-wide">
+                        High School & younger - $50 / 45 min
+                    </h3>
+                    <ul class="space-y-2 text-neutral-600">
+                        <li>Beginning youth players</li>
+                        <li>High school player development</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold uppercase tracking-wide">
+                        Group - $50 / hour / person
+                    </h3>
+                    <ul class="space-y-2 text-neutral-600">
+                        <li>Couples encouraged</li>
+                        <li>Friends or co-workers</li>
+                        <li>2 - 4 people recommended</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map/Info Section -->
+        <section class="py-20 bg-black text-white flex flex-col md:flex-row">
+            <div
+                class="w-full md:w-1/2 h-[500px] bg-neutral-200 flex items-center justify-center text-neutral-500 italic"
+            >
+                [Google Map Placeholder: Hunter Ranch, Paso Robles, CA]
+            </div>
+            <div class="w-full md:w-1/2 p-12 md:p-24 flex items-center">
+                <div class="space-y-8">
+                    <h3 class="text-3xl font-bold uppercase tracking-wider">
+                        Available Daily
+                    </h3>
+                    <div class="space-y-2 text-lg">
+                        <p class="italic">Mon, Tue, Wed 1 pm - 6 pm</p>
+                        <p class="italic">Thu, Fri, Sat, Sun 8 am - 6 pm</p>
+                        <p class="font-bold">Only Available by Appointment</p>
+                    </div>
+                    <p>
+                        <a
+                            href="/contact"
+                            class="underline font-bold hover:opacity-70 transition-opacity"
+                            >Contact me</a
+                        >
+                    </p>
+                    <div class="space-y-1">
+                        <p
+                            class="text-sm uppercase tracking-widest text-neutral-500"
+                        >
+                            Location:
+                        </p>
+                        <p class="font-bold text-xl">
+                            Hunter Ranch Golf Course
+                        </p>
+                        <p class="italic text-neutral-600">
+                            4041 CA-46, Paso Robles, CA 93446
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section class="py-24 bg-white px-4 md:px-8">
+            <div class="max-w-4xl mx-auto text-center space-y-8">
+                <h2
+                    class="text-3xl md:text-4xl font-bold uppercase tracking-widest"
+                >
+                    Our Philosophy
+                </h2>
+                <p
+                    class="text-lg md:text-xl italic text-neutral-700 leading-relaxed font-['Frank_Ruhl_Libre']"
+                >
+                    We believe the needs and desires of the player dictate the
+                    path to better golf and more enjoyment. We believe the body
+                    is a tool. Each of our bodies are capable of performing
+                    different movements; through the use of body mechanics, we
+                    look to build the most powerful and yet efficient golf
+                    swing. Repetition is key, so good practice habits and drills
+                    are used to achieve consistency. How to practice has become
+                    a priority in all facets of my teaching. Setting goals is
+                    important whether based on performance or enjoyment to
+                    measure progress for all students. We respect each
+                    individual and their journey towards achieving their goals.
+                </p>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section
+            class="relative h-[60vh] flex items-center justify-center text-white overflow-hidden"
+        >
+            <div class="absolute inset-0 z-0">
+                <img
+                    src="/assets/hands.webp"
+                    alt="Golf Hands"
+                    class="w-full h-full object-cover"
+                />
+                <div class="absolute inset-0 bg-black/40"></div>
+            </div>
+            <div
+                class="relative z-10 max-w-4xl mx-auto px-4 text-center space-y-6"
+            >
+                <h2
+                    class="text-3xl md:text-5xl font-bold italic leading-tight font-['Frank_Ruhl_Libre']"
+                >
+                    “We look to build the most powerful and yet efficient golf
+                    swing”
+                </h2>
+                <p class="text-lg md:text-xl uppercase tracking-widest">
+                    — Steve Hahn, Member Professional - PGA
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <Footer />
+</Layout>

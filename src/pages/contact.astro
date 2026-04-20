@@ -1,0 +1,34 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ContactForm from '../components/ContactForm.astro';
+---
+
+<Layout title="Contact — Steve Hahn PGA Coaching at Hunter Ranch">
+  <Header />
+  
+  <main>
+    <section class="relative min-h-[90vh] flex items-center justify-center text-white overflow-hidden py-20">
+      <div class="absolute inset-0 z-0">
+        <img src="/assets/hero-contact.webp" alt="Steve Hahn Contact" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-black/30"></div>
+      </div>
+      
+      <div class="relative z-10 max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-8">
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+            Please feel free to contact us with any questions.
+          </h1>
+          <img src="/assets/pga-logo.webp" alt="PGA Logo" class="w-32 md:w-48" />
+        </div>
+        
+        <div class="text-black">
+          <ContactForm />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
