@@ -1,46 +1,131 @@
 ---
+
 ---
-<form class="space-y-6 bg-white p-8 border border-neutral-200 shadow-sm">
-  <div class="space-y-1">
-    <label for="name" class="block text-sm font-bold uppercase tracking-widest">Name <span class="text-neutral-400 font-normal">(required)</span></label>
-    <input type="text" id="name" name="name" required class="w-full border-b border-black py-2 focus:outline-none focus:border-neutral-500 transition-colors" />
-  </div>
-  
-  <div class="space-y-1">
-    <label for="contact" class="block text-sm font-bold uppercase tracking-widest">Email or Phone <span class="text-neutral-400 font-normal">(required)</span></label>
-    <input type="text" id="contact" name="contact" required class="w-full border-b border-black py-2 focus:outline-none focus:border-neutral-500 transition-colors" />
-  </div>
-  
-  <div class="space-y-3">
-    <p class="block text-sm font-bold uppercase tracking-widest">Interested in <span class="text-neutral-400 font-normal">(required)</span></p>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
-      <label class="flex items-center gap-3 cursor-pointer group">
-        <input type="checkbox" name="interest" value="Adult" class="w-4 h-4 border-black rounded-none" />
-        <span class="text-sm uppercase tracking-wider group-hover:opacity-70 transition-opacity">Adult</span>
-      </label>
-      <label class="flex items-center gap-3 cursor-pointer group">
-        <input type="checkbox" name="interest" value="High School & younger" class="w-4 h-4 border-black rounded-none" />
-        <span class="text-sm uppercase tracking-wider group-hover:opacity-70 transition-opacity">High School & younger</span>
-      </label>
-      <label class="flex items-center gap-3 cursor-pointer group">
-        <input type="checkbox" name="interest" value="Group" class="w-4 h-4 border-black rounded-none" />
-        <span class="text-sm uppercase tracking-wider group-hover:opacity-70 transition-opacity">Group</span>
-      </label>
-      <label class="flex items-center gap-3 cursor-pointer group">
-        <input type="checkbox" name="interest" value="Other" class="w-4 h-4 border-black rounded-none" />
-        <span class="text-sm uppercase tracking-wider group-hover:opacity-70 transition-opacity">Other</span>
-      </label>
+
+<form
+    action="https://api.web3forms.com/submit"
+    method="POST"
+    class="space-y-6 bg-white p-8 border border-neutral-200 shadow-sm"
+>
+    <input
+        type="hidden"
+        name="access_key"
+        value="604b409c-f460-470a-816b-95310acf679c"
+    />
+    <input type="checkbox" name="botcheck" id="" style="display: none;" />
+    <div class="space-y-1">
+        <label
+            for="name"
+            class="block text-sm font-bold uppercase tracking-widest"
+            >Name <span class="text-neutral-400 font-normal">(required)</span
+            ></label
+        >
+        <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="w-full border-b border-black py-2 focus:outline-none focus:border-neutral-500 transition-colors"
+        />
     </div>
-  </div>
-  
-  <div class="space-y-1">
-    <label for="message" class="block text-sm font-bold uppercase tracking-widest">Message <span class="text-neutral-400 font-normal">(required)</span></label>
-    <textarea id="message" name="message" required rows="4" class="w-full border-b border-black py-2 focus:outline-none focus:border-neutral-500 transition-colors"></textarea>
-  </div>
-  
-  <div>
-    <button type="submit" class="bg-accent text-white px-10 py-4 uppercase tracking-widest text-sm font-bold hover:bg-opacity-90 transition-colors cursor-pointer">
-      Submit
-    </button>
-  </div>
+
+    <div class="space-y-1">
+        <label
+            for="contact"
+            class="block text-sm font-bold uppercase tracking-widest"
+            >Email or Phone <span class="text-neutral-400 font-normal"
+                >(required)</span
+            ></label
+        >
+        <input
+            type="text"
+            id="contact"
+            name="contact"
+            required
+            class="w-full border-b border-black py-2 focus:outline-none focus:border-neutral-500 transition-colors"
+        />
+    </div>
+
+    <div class="space-y-3">
+        <p class="block text-sm font-bold uppercase tracking-widest">
+            Interested in <span class="text-neutral-400 font-normal"
+                >(required)</span
+            >
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+            <label class="flex items-center gap-3 cursor-pointer group">
+                <input
+                    type="checkbox"
+                    name="interest"
+                    value="Adult"
+                    class="w-4 h-4 border-black rounded-none"
+                />
+                <span
+                    class="text-sm uppercase tracking-wider group-hover:opacity-70 transition-opacity"
+                    >Adult</span
+                >
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer group">
+                <input
+                    type="checkbox"
+                    name="interest"
+                    value="High School & younger"
+                    class="w-4 h-4 border-black rounded-none"
+                />
+                <span
+                    class="text-sm uppercase tracking-wider group-hover:opacity-70 transition-opacity"
+                    >High School & younger</span
+                >
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer group">
+                <input
+                    type="checkbox"
+                    name="interest"
+                    value="Group"
+                    class="w-4 h-4 border-black rounded-none"
+                />
+                <span
+                    class="text-sm uppercase tracking-wider group-hover:opacity-70 transition-opacity"
+                    >Group</span
+                >
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer group">
+                <input
+                    type="checkbox"
+                    name="interest"
+                    value="Other"
+                    class="w-4 h-4 border-black rounded-none"
+                />
+                <span
+                    class="text-sm uppercase tracking-wider group-hover:opacity-70 transition-opacity"
+                    >Other</span
+                >
+            </label>
+        </div>
+    </div>
+
+    <div class="space-y-1">
+        <label
+            for="message"
+            class="block text-sm font-bold uppercase tracking-widest"
+            >Message <span class="text-neutral-400 font-normal">(required)</span
+            ></label
+        >
+        <textarea
+            id="message"
+            name="message"
+            required
+            rows="4"
+            class="w-full border-b border-black py-2 focus:outline-none focus:border-neutral-500 transition-colors"
+        ></textarea>
+    </div>
+
+    <div>
+        <button
+            type="submit"
+            class="bg-accent text-white px-10 py-4 uppercase tracking-widest text-sm font-bold hover:bg-opacity-90 transition-colors cursor-pointer"
+        >
+            Submit
+        </button>
+    </div>
 </form>
